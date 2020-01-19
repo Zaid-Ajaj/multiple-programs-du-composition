@@ -71,7 +71,7 @@ let render (state: State) (dispatch: Msg -> unit) =
       Html.div [
         Html.button [
           prop.text "Show counter"
-          prop.onClick (fun _ -> dispatch SwitchToInputText)
+          prop.onClick (fun _ -> dispatch SwitchToCounter)
         ]
 
         Common.divider
